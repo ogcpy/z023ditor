@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { PlayCircle, Star, Users } from "lucide-react";
-import heroImage from "@/assets/hero-image.jpg";
+import { PlayCircle, Star, Users, TrendingUp } from "lucide-react";
+import heroImage from "@/assets/zero-to-editor-hero.jpg";
 
 export const Hero = () => {
   return (
@@ -20,56 +20,54 @@ export const Hero = () => {
         <div className="max-w-4xl mx-auto">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 bg-primary/10 border border-primary/20 rounded-full px-4 py-2 mb-8">
-            <Star className="w-4 h-4 text-primary" />
-            <span className="text-sm font-medium text-primary">Complete Video Editing Masterclass</span>
+            <TrendingUp className="w-4 h-4 text-primary" />
+            <span className="text-sm font-medium text-primary">Trusted by Nike, adidas & Top Brands</span>
           </div>
 
           {/* Main Heading */}
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-6">
-            Master 
-            <span className="bg-gradient-primary bg-clip-text text-transparent"> Video Editing</span>
+            🎬 From Zero to 
+            <span className="bg-gradient-primary bg-clip-text text-transparent"> Editor</span>
             <br />
-            with Premiere Pro & After Effects
+            — Fast.
           </h1>
 
           {/* Subheading */}
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-            Transform your creative vision into stunning videos. Learn professional editing techniques, 
-            motion graphics, and visual effects from industry experts.
+            Learn Premiere Pro & After Effects the smart way.<br />
+            1-on-1 mentoring now available. Crash courses dropping soon.
           </p>
 
           {/* Stats */}
           <div className="flex flex-wrap justify-center gap-8 mb-10 text-sm">
             <div className="flex items-center gap-2">
               <Users className="w-5 h-5 text-primary" />
-              <span className="text-muted-foreground">25,000+ students</span>
+              <span className="text-muted-foreground">1,000+ creators</span>
             </div>
             <div className="flex items-center gap-2">
               <Star className="w-5 h-5 text-primary" />
-              <span className="text-muted-foreground">4.9/5 rating</span>
+              <span className="text-muted-foreground">@zerotoeditor</span>
             </div>
             <div className="flex items-center gap-2">
               <PlayCircle className="w-5 h-5 text-primary" />
-              <span className="text-muted-foreground">50+ hours content</span>
+              <span className="text-muted-foreground">No-fluff learning</span>
             </div>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-              Start Learning Today
+              Book a 1-on-1 Session
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-6">
-              <PlayCircle className="w-5 h-5 mr-2" />
-              Watch Preview
+              Join the Course Waitlist
             </Button>
           </div>
 
-          {/* Price Tag */}
+          {/* Pricing Preview */}
           <div className="mt-8 text-sm text-muted-foreground">
-            <span className="line-through">$299</span>
-            <span className="text-2xl font-bold text-primary ml-2">$199</span>
-            <span className="ml-2">• Limited time offer</span>
+            <span className="text-lg font-bold text-primary">Courses from £47</span>
+            <span className="ml-2">• 1-on-1 mentoring available</span>
           </div>
         </div>
       </div>
