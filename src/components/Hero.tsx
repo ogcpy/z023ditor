@@ -56,10 +56,10 @@ export const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6">
+            <Button variant="hero" size="lg" className="text-lg px-8 py-6" onClick={() => window.open('mailto:hello@zerotoeditor.com?subject=1-on-1 Session Booking', '_blank')}>
               Book a 1-on-1 Session
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+            <Button variant="outline" size="lg" className="text-lg px-8 py-6" onClick={() => window.open('mailto:hello@zerotoeditor.com?subject=Course Waitlist', '_blank')}>
               Join the Course Waitlist
             </Button>
           </div>
