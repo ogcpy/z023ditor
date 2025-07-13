@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { WaitlistForm } from "@/components/WaitlistForm";
 import { Clock, Play, FileText } from "lucide-react";
 
 export const Curriculum = () => {
@@ -147,16 +148,15 @@ export const Curriculum = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button 
               className="px-8 py-3 bg-primary text-primary-foreground rounded-lg font-medium hover:bg-primary/90 transition-colors"
-              onClick={() => window.open('mailto:hello@zerotoeditor.com?subject=1-on-1 Session Booking', '_blank')}
+              onClick={() => window.open('https://wa.me/447123456789?text=Hi%20there!%20I%27d%20like%20to%20book%20a%201-on-1%20video%20editing%20session.', '_blank')}
             >
               Book 1-on-1 Session
             </button>
-            <button 
-              className="px-8 py-3 border border-primary text-primary rounded-lg font-medium hover:bg-primary/10 transition-colors"
-              onClick={() => window.open('mailto:hello@zerotoeditor.com?subject=Course Waitlist', '_blank')}
-            >
-              Join Course Waitlist
-            </button>
+            <WaitlistForm>
+              <button className="px-8 py-3 border border-primary text-primary rounded-lg font-medium hover:bg-primary/10 transition-colors">
+                Join Course Waitlist
+              </button>
+            </WaitlistForm>
           </div>
         </div>
       </div>

@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { PlayCircle, Star, Users, TrendingUp } from "lucide-react";
 import heroImage from "@/assets/zero-to-editor-hero.jpg";
+import { WaitlistForm } from "@/components/WaitlistForm";
 
 export const Hero = () => {
   return (
@@ -59,9 +60,11 @@ export const Hero = () => {
             <Button variant="hero" size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://wa.me/447123456789?text=Hi%20there!%20I%27d%20like%20to%20book%20a%201-on-1%20video%20editing%20session.', '_blank')}>
               Book a 1-on-1 Session
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6" onClick={() => window.open('mailto:hello@zerotoeditor.com?subject=Course Waitlist', '_blank')}>
-              Join the Course Waitlist
-            </Button>
+            <WaitlistForm>
+              <Button variant="outline" size="lg" className="text-lg px-8 py-6">
+                Join the Course Waitlist
+              </Button>
+            </WaitlistForm>
           </div>
 
           {/* Pricing Preview */}

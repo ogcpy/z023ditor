@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Mail, MessageCircle, Play } from "lucide-react";
+import { WaitlistForm } from "@/components/WaitlistForm";
 
 export const Footer = () => {
   return (
@@ -14,12 +15,14 @@ export const Footer = () => {
             Stop watching endless tutorials. Start creating professional content today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="secondary" size="lg" className="text-lg px-8 py-6">
+            <Button variant="secondary" size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://wa.me/447123456789?text=Hi%20there!%20I%27d%20like%20to%20book%20a%201-on-1%20video%20editing%20session.', '_blank')}>
               Book a 1-on-1 Session
             </Button>
-            <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10">
-              Join the Course Waitlist
-            </Button>
+            <WaitlistForm>
+              <Button variant="outline" size="lg" className="text-lg px-8 py-6 border-primary-foreground/20 text-primary-foreground hover:bg-primary-foreground/10">
+                Join the Course Waitlist
+              </Button>
+            </WaitlistForm>
           </div>
         </div>
 
