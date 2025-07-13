@@ -56,7 +56,7 @@ export const Hero = () => {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button variant="hero" size="lg" className="text-lg px-8 py-6" onClick={() => window.open('mailto:hello@zerotoeditor.com?subject=1-on-1 Session Booking', '_blank')}>
+            <Button variant="hero" size="lg" className="text-lg px-8 py-6" onClick={() => window.open('https://wa.me/447123456789?text=Hi%20there!%20I%27d%20like%20to%20book%20a%201-on-1%20video%20editing%20session.', '_blank')}>
               Book a 1-on-1 Session
             </Button>
             <Button variant="outline" size="lg" className="text-lg px-8 py-6" onClick={() => window.open('mailto:hello@zerotoeditor.com?subject=Course Waitlist', '_blank')}>
